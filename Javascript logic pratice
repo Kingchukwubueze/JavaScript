@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+  <input type="text" id="number">
+  <button onclick="isodd()">  check</button>
+<script>  
+   // let name = prompt('enter your name');
+  //  let message = `Good morning ${name}`
+  //  alert(message)
+/*
+ function isodd(){
+ let number = document.getElementById('number').value;
+ if(number % 2 === 0 ){
+    alert(`${number} is even `)
+ }
+ else if ( number % 2 !== 0 ){
+    alert('is odd')
+ } else {
+
+    alert('input number')
+ }
+
+ }
+*/
+/*
+function calculateRectangleArea( width, height ){
+ let result = width*height
+ console.log(result);
+}
+calculateRectangleArea( 4,5)
+*/
+ /*let kmLeft = prompt( 'how many kilometers to go?');
+ kmLeft = Number(kmLeft);
+ if ( kmLeft === 100){
+    alert("You still have a bit of driving left to go")
+    
+
+ }
+ else if(kmLeft === 50){
+    alert( 
+        "I'll be there in 5 minutes")
+ }
+ else if (
+    kmLeft <= 50
+ ){
+    alert(`i'll see you right now`)
+ }*/
+/*
+ let  age = prompt('Age:')
+ age = Number(age)
+
+ if( age >= 18){
+    alert(` ${age}, you are old enough to vote`)
+ }else{
+    alert(` you are ${age} years old, wait till you are up to 18`)
+ }
+*/
+/*
+let person = { 
+name: "John",                    
+lastName: "Doe", 
+age: 35,                         
+//String 
+//Number 
+gender: "male", 
+luckyNumbers: [ 7, 11, 13, 17], //Array 
+     
+//Object,  
+}; 
+let person2 = { 
+name: "Jane", 
+lastName: "Doe", 
+age: 38, 
+gender: "female", 
+luckyNumbers: [ 2, 4, 6, 8], 
+significantOther: person 
+}; 
+; 
+let family = { 
+lastName: "Doe", 
+members: [person, person2] }   
+
+console.log()
+*/
+/*
+let i = 0;
+for(i; i<100; +i++){
+   if (i % 3 === 0){
+      console.log('fizz')
+   }else if (i % 5 === 0){
+      console.log("buzz")
+   }else{
+      console.log(i)
+   }
+}
+*/
+
+/*
+
+const books = [ 
+  { 
+title: "Eloquent JavaScript, Third Edition", 
+author: "Marijn Haverbeke" 
+  }, 
+  { 
+title: "Practical Modern JavaScript", 
+author: "Nicolás Bevacqua" 
+  } 
+] 
+
+//alert(books[0].title)
+
+let i = 0;
+for(i; i<books.length; i++){
+   console.log(books)
+}
+*/
+/*
+console.log('hello world')
+
+let name = 'chloe';
+console.log(name)
+ let y = 3, x = 5
+ console.log( y + x)
+
+ let number = 12;
+ if(number %2 === 0){
+   console.log('even');
+ }
+let a = 15, b = 30, c = 45;
+ if(a >= b && a >= c){
+   console.log( 'A is greater')
+ } else if ( b>= a && b>= c){
+   console.log('B is greater')
+ } else if(c >= a && c >= b ){
+   console.log( 'C is greater ')
+ }
+  let i = 0; 
+  for( i; i <= 10; i++){
+   console.log(i)
+  }
+
+  let greeting = 'hello';
+  console.log( greeting + 'Chloe')
+
+  let Array=[
+   'chloe', 
+   'naeto',
+   'jake',
+   'ekene'
+  ]; 
+  for(i =0; i< Array.length; i++){
+   console.log(i)
+  }
+   */
+/*
+   let num1 = prompt('enter number ')
+   let operator = prompt('enter an operator')
+   let num2 = prompt('enter a number')
+function calculator  ( a, b, operator ){
+   if (operator === '+'){
+      return a + b;
+   } else if( operator === '-'){
+      return a-b;
+   }else if( operator === '*'){
+      return a*b;
+   }else if(operator === '/'){
+      return a/b;    }
+   else{
+      console.log('Operator not definded')
+   }
+
+}
+
+let result = calculator(num1, num2, operator)
+alert(result)
+*/
+
+/*
+let i = 10 
+for( i; i>=1; i-- ){
+   console.log(i)
+}
+   */
+/*
+   let Array = [
+      2,5,7,3,5
+   ]
+let sum = Array.reduce((accummlator, currentValue) => 
+   accummlator + currentValue, 0)
+console.log(sum)
+*/
+/*
+function captalizeWord(str){
+   return str.charAt(0).toUpperCase() + str.slice(1);
+}
+console.log(captalizeWord("okeleke"));
+
+function factorize(n){
+   let result = 1;
+   for( i = 1;  i <= n; i++){
+     result *= i;
+   }
+   return result;
+}
+console.log(factorize(5))
+
+
+function ispalin(str){
+let rev = str.split("").reverse("").join("")
+return str === rev
+}
+
+console.log(ispalin('civic'))
+
+.split("") turns the string into an array of characters.
+
+.reverse() flips the array.
+
+.join("") puts the characters back into a string.
+
+If the original string and reversed one match, it’s a palindrome!
+
+
+
+
+
+function sumArray(arr){
+   let sum =0; 
+   for(let num of arr){
+      sum += num
+   }
+   return sum;
+}
+console.log(sumArray([1,2,3,4,5]))
+
+We loop through the array using for...of.
+
+Each num gets added to the sum.
+
+At the end, we return the total.
+
+
+function countvowels( str){
+   let count =0;
+   let vowels = "aeiouAEIOU"
+   for(let char of str){
+      if (vowels.includes(char)){
+          count++
+      }
+   }
+   return count;
+}
+console.log(countvowels('JavaScript'))
+
+We define all possible vowels (uppercase and lowercase).
+
+Loop through each character in the string.
+
+If the character is in the vowels string, we increment count.
+
+
+
+function findMax(arr){ let max = arr[0]
+   for( let num of arr ){
+      if(num > max){
+         max = num;
+      }
+   }
+   return max
+  }
+
+  console.log(findMax([ 2,8,5,4,20,10,96]))
+
+Start assuming the first item is the biggest.
+
+Loop through the array.
+
+If a number is bigger than max, we update max.
+
+
+function isPrime(num) {
+  if (num < 2) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(isPrime(7));  // true
+console.log(isPrime(10)); // false
+A prime number has only two divisors: 1 and itself.
+
+We only check up to sqrt(num) (for efficiency).
+
+If it divides evenly by any number in that range, it's not prime.
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
+}
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
+}
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); 
+// Output: [1, 2, 3, 4, 5]
+Set is a JavaScript object that only stores unique values.
+
+Spreading it with ... turns it back into a regular array.
+
+
+function checkFre(str){
+   let freq = {};
+   for (let char of str){
+      freq[char] = (freq[char] || 0) + 1;
+   }
+   return freq;
+}
+console.log(checkFre("Okeleke"));
+
+
+
+function arrFilter(arr){
+   return arr.filter(num => num % 2 === 0 )
+}
+
+console.log(arrFilter([1,2,3,4,5,6,7,8,9,10]))
+
+The .filter() method creates a new array.
+
+It takes a function that returns true or false for each element.
+
+num % 2 === 0 checks if a number is divisible by 2.
+
+If true, the number is added to the new array.
+
+
+function manualSort(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i+1; j < arr.length; j++) {
+      if (arr[j] < arr[i]) {
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+    }
+  }
+  return arr;
+}
+
+console.log(manualSort([5, 2, 9, 1]));
+
+We're comparing pairs of elements.
+
+If a later element is smaller than the current one, we swap them.
+
+[arr[i], arr[j]] = [arr[j], arr[i]] is destructuring assignment, used here to swap values without a temporary variable.
+
+
+function flattenArray(arr){
+ return arr.flat()
+}
+console.log(flattenArray([1,2,[3,4], 5,6,[7,8]]))
+.flat(flattens an array only to one level)
+
+
+function removeFalsy(arr){
+   return arr.filter(Boolean)
+}
+console.log(removeFalsy([1,2,'', false, 5, 6, NaN, undefined]))
+ this can be used to remove particular type of data
+ 
+function groupItem(arr){
+   let result = {}
+   for(let item in arr){
+      let type = typeof item;
+      if (!result[type]){
+         result[type] =[ ]
+        
+      }
+      result[type].push(item)
+   } return result
+}
+console.log(groupItem([1, "hi", true, 2, "hello"]))
+
+* first we create an empty object
+* then we assign every item to a type of its onwaiting
+* if it does not exist prior we create and add it to an array of it's onwaiting
+* it a similar type exists already we add it to the already created array
+
+
+function countWords(sentence){
+   let words = sentence.split(" ")
+   let count = {}
+   for (let word of words){
+      count[word] = (count[word] || 0) +1 
+   } return count 
+}
+console.log(countWords("this is a test this is only a test a test is only a test"))
+.split(" ") splits the sentence into words.
+
+For each word, we use the same frequency pattern we used earlier.
+
+If a word already exists, we increase its count; otherwise, we set it to 1.
+
+
+function chunkArray(arr, size) {
+  let chunks = [];
+  for (let i = 0; i < arr.length; i += size) {
+    chunks.push(arr.slice(i, i + size));
+  }
+  return chunks;
+}
+
+console.log(chunkArray([1, 2, 3, 4, 5, 6], 2));
+We loop through the array with a step of size.
+
+.slice(i, i + size) creates a subarray of that size.
+
+Each subarray gets pushed into the chunks array.
+
+This is useful for pagination or splitting data into smaller parts.
+
+
+function perform(arr,callback){
+   let result =[]
+   for( let i =0; i < arr.length ; i++){
+      result.push(callback(arr[i], i, arr ))
+   }
+  return result
+}
+let doubled = perform([1,2,3,4,5], num => num *2)
+console.log(doubled)
+
+this is what it takes to remake a map()
+
+
+ function calculator(a, b, operator ){
+   if(operator === "+"){
+    return   a+b 
+   } else if( operator === "- "){
+      return a + b 
+   }else if ( operator === "/"){
+      return a/b 
+   }else if( operator === "*"){
+      return a * b
+   }
+
+
+ }
+
+
+
+
+function customfilter(arr,callback){
+   let result = []
+   for( i =0; i < arr.length; i++){
+      if(callback(arr[i], i, arr)){
+         result.push(arr[i])
+      }
+   } return result; 
+}
+let words = [ "hi", "fun", "mine", 'gal', 'heaven' , 'earth', 'market', 'lend,', " mama"]
+let even  = customfilter (words, word =>  word.length > 3 )
+console.log(even)
+
+let mixed = [ 0, true, false, 8, 'mama', NaN, undefined, 'mothers-love ' ]
+let filter = customfilter( mixed, Boolean);
+console.log(filter)
+
+
+
+function flatten (arr){
+   let result =[]
+   for( i =0; i < arr.length; i++){
+      if(Array.isArray(arr[i])){
+         for(j = 0; j< arr[i].length; j++){
+            result.push(arr[i][j])
+            
+         }
+      }else{
+         result.push(arr[i])
+      }
+   } return result;
+}
+//let arr =[ 2,[3,4,], 5,6, 14,98, [34,66,2343,]]
+console.log(flatten([ 2,[3,4,], 5,6, 14,98, [34,66,2343,]] ))
+
+
+function flattendeep(arr){
+   let result = []
+   for(let i =0; i < arr.length; i++){
+      if(Array.isArray(arr[i])){
+    result =   result.concat(flattendeep(arr[i]))
+      } else{
+         result.push(arr[i])
+      }
+   } return result;
+}
+console.log(flattendeep([2,[3,4,], 5,6, 14,98, [34,66,2343,]]))
+
+
+const flattendeep = 
+   arr=> arr.reduce((acc, val) => 
+      Array.isArray(val)
+         ? acc.concat(flattendeep(val))
+            : acc.concat(val), [])
+alert (flattendeep([2,[3,4,], 5,6, 14,98, [34,66,2343,]]))
+
+function Toupper(str){
+   for(i=0; i<str.length; i++){
+      str2 = str.charAt(0)
+      return str2.toUpperCase() + 'avid'
+   }
+}
+console.log(Toupper('david'))
+
+
+function Toupper(str){
+   return str 
+   .toLowerCase()
+   .split(" ")
+   .map( word =>
+      word.charAt(0).toUpperCase() + word.slice(1)
+   )
+   .join(" ")
+}
+console.log(Toupper('my name is david'))
+
+function toHeadLine(str){
+   const smallWords = [
+    "a", "an", "the", "and", "but", "or", "nor", "for", 
+    "on", "at", "to", "from", "by", "in", "with", "of"
+  ];
+return str 
+.toLowerCase()
+.split()
+.map((word, index) => { if (index === 0 || !smallWords.includes(word)){
+   return word.charAt(0).toUpperCase() + word.slice(1)
+}else { return word } }) .join(" ")
+}
+console.log(toHeadLine("the lord of the ring"))
+
+function reverseword(str){
+   return str 
+   .trim()
+   .split(/\s+/)
+   .reverse()
+   .join(" ")
+}
+console.log(reverseword( "sonia  love I "))
+
+
+function countWord(str){
+const  cleaned = str
+.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"']/g, "") 
+.trim()
+if(cleaned === 0) return 0;
+const word = cleaned.split(/\s+/)
+return word.length
+
+   
+}
+
+console.log(countWord("I love to love"))
+
+function countsChars(str){
+   result ={}
+   for(let Char of str){
+      if(result[Char]){
+         result[Char]++
+      }else{
+         result[Char] = 1
+      }
+   } return result
+}
+console.log(countsChars(" I love to love "))
+
+function findlongestWord(str){
+ const words = str.trim().split(/\s+/) // trims and remvoes spaces 
+ longest = " "; // loops through and saves to this 
+ for( let word of words){
+   if( word.length > longest.length)// updates the longest
+   {
+      longest = word
+   }
+ } return longest; 
+}
+console.log(findlongestWord("I love God, in everything I do I want him to guide me"))
+
+function findLongestWord(str){
+     // Step 1: Clean the input
+   const cleaned = str
+   .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"']/g, "") // remove punctuation
+ .trim()
+  // Step 2: Split into words
+const words = cleaned.split(/\s+/)
+
+
+  // Step 3: Find max length
+ maxLength =0
+ longestWords =[]
+ for(let word of words){
+      if(word.length > maxLength)
+      {
+         maxLength = word.length;
+         longestWords[word]
+      }
+      else if( word.length === maxLength){
+         longestWords.push(word)
+
+      }
+   } return { words : longestWords, 
+               length: maxLength
+ }// Step 4: Return the result
+
+
+}
+console.log(findLongestWord("Hello, brave new world!"));
+console.log(findLongestWord("We love JavaScript."));
+
+function mostFrequent(str){
+   const cleaned = str.replace(/[^a-z]/g, "").toLowerCase()
+const frequency = {}
+for ( let char of cleaned){
+   frequency[char] = (frequency[char] || 0) +1
+
+}
+maxCount= 0;
+maxChar = " "; 
+for(let char in frequency){
+   if(frequency[char] > maxCount){
+      maxCount = frequency[char]
+      maxChar = char
+   }
+}
+   return maxChar
+} 
+console.log(mostFrequent(" aabbbcccc")) 
+
+function mostFrequentChar(str){
+   const cleaned = str.replace(/[^a-zA-Z]/g, "");
+
+const frequency = {};
+
+// Step 2: Count each character
+for (let char of cleaned) {
+  
+   frequency[char] = (frequency[char] || 0)+1
+}
+
+// Step 3: Find the highest count
+let maxCount = 0;
+for (let char in frequency) {
+  if ( frequency[char] > maxCount){
+   maxCount = frequency[char]
+  }
+}
+
+// Step 4: Collect all characters with maxCount
+const mostFrequent = [];
+for (let char in frequency) {
+  if ( frequency[char] === maxCount){
+   mostFrequent.push(char)
+  }
+}
+
+// Step 5: Return the result object
+return {
+  chars: mostFrequent,
+  count: maxCount
+};
+}
+console.log(mostFrequentChar("aabbbcccc"))
+
+function isPalindrome(str){
+   const cleaned = str
+   .toLowerCase()
+   .replace(/[^a-z0-9]/g, "")
+
+   const reversed = cleaned.split(" ").reverse().join(" ")
+
+   return cleaned === reversed
+}
+console.log(isPalindrome(("No lemon, no melon")))
+
+
+function analyzePalindrome(str){
+   const cleaned = str
+   .toLowerCase()
+   .replace(/[^a-z0-9]/g, " ")
+const reversed = cleaned.split(" ").reverse().join(" ")
+
+   const isFullPalindrom = cleaned === reversed;
+   const words  = str 
+   .toLowerCase()
+   .match(/\b[a-z0-9]+\b/g)
+
+   const wordPalindrome =[];
+
+   for(let word of words || [] ){
+      const reversedWord= word.split(" ").reverse().join(" ")
+      if ( word === reversedWord ){
+         wordPalindrome.push(word)
+      }
+   }
+   return {
+      orginal : str, 
+      cleaned, 
+      reversed, 
+      isFullPalindrom, 
+      wordPalindrome
+   }
+}
+console.log(analyzePalindrome("Not a palindrome"));
+
+
+
+
+function analyzeText(str) {
+  
+  const cleaned = str.toLowerCase().replace(/[^a-z0-9\s]/g, "");
+
+ 
+  const words = cleaned.split(/\s+/).filter(Boolean);
+
+ 
+  const charCount = cleaned.replace(/\s+/g, "").length; 
+
+
+  const wordCount = words.length;
+
+  
+  let longestWord = "";
+  for (let word of words) {
+    if(word.length > longestWord.length){
+      longestWord = word;
+    }
+  }
+
+  
+  const wordFreq = {};
+  for (let word of words) {
+    wordFreq [word] = (wordFreq[word] || 0) +1 
+  }
+
+
+ 
+  let mostFrequentWord = "";
+  let maxCount = 0;
+  for (let word in wordFreq) {
+    if ( wordFreq[word] > maxCount){
+      maxCount = wordFreq[word]
+      mostFrequentWord = word; 
+    }
+  }
+
+  // Step 8: Get unique words
+  const uniqueWords = Object.keys(wordFreq)
+
+  // Step 9: Return results
+  return {
+    characterCount: charCount,
+    wordCount: wordCount,
+    longestWord: longestWord,
+    mostFrequentWord: mostFrequentWord,
+    uniqueWords: uniqueWords
+  };
+}
+
+
+
+console.log(analyzeText("my name is david, everyday God blesses me, I improve in my coding skills. I'm seeing a lady I call mama"))
+
+
+
+function groupByFirstLetter(str){
+let cleaned = str.toLowerCase().replace(/[^a-z0-9/s]/g, " ")
+let words = cleaned.split(/\s+/).filter(Boolean)
+let groups = {}
+for (let word of words){
+   const firstLetter = word[0]
+   if(!groups[firstLetter]){
+      groups[firstLetter] = {}
+   }
+   groups[firstLetter][word] = (groups[firstLetter][word] || 0)+1
+
+ }
+sortedGroups ={}
+for(let letter in groups){
+   let wordCount = Object.entries(groups[letter]);
+   wordCount.sort((a,b) => b[1] - a[1])
+   sortedGroups[letter] = wordCount
+}
+
+return sortedGroups
+}
+console.log(groupByFirstLetter("I am improving daily, and I love learning with JavaScript!"))
+
+function groupWordsByLength(str){
+let cleaned = str.toLowerCase().replace(/[^a-z0-9\s]/g, " ");
+let words = cleaned.split(/\s+/).filter(Boolean);
+let groups= {}
+for(let word of words){
+   let length = word.length
+   if(!groups[length]){
+      groups[length] = {}
+   }
+   groups[length][word] = (groups[length][word] || 0) +1;
+}
+let sortedGroups = {};
+for(let len in groups){
+  let wordEntries = Object.entries(groups[len]);
+   wordEntries.sort((a,b) => b[1]-a[1]);
+   sortedGroups[len] = wordEntries;
+}
+let summary = {}
+for(let len in sortedGroups){
+   summary[len] = sortedGroups[len].length
+}
+return {
+   groups:sortedGroups,
+   summary:summary
+}
+}
+console.log(groupWordsByLength("I am growing fast. Growing means learning fast and coding better!"));
+
+
+function analyzeStudents(studentList){
+   const analyzed =studentList.map(student => {
+      const total = student.scores.reduce(function (sum, score) {
+      return sum + score;
+    }, 0);
+      const average= total/student.scores.length;
+      const passed = average >= 50
+      return { 
+         name:student.name,
+         average:average,
+         passed:passed,
+         attendance:student.attendance
+      };}
+)
+const perfectAttenance = analyzed.filter((student) => student.attendance === 100).map(s => s.name)
+return {analyzed : analyzed,
+       perfectAttendance:perfectAttendance
+   }
+}
+console.log(analyzeStudents( [
+    { name: "Alice", average: 70, passed: true, attendance: 100 },
+    { name: "Bob", average: 45, passed: false, attendance: 95 },
+    { name: "Clara", average: 87.67, passed: true, attendance: 100 }
+  ]))
+    
+    function analyzeStudents(studentList){
+     const analyzed = studentList.map(student => {
+      const total = student.scores.reduce((sum, score) => sum + score, 0);
+      const average = student.scores.length > 0 
+         ? total/student.scores.length : 0;
+         const passed = average > 50;
+      return{
+         name : student.name,
+         passed:passed,
+         average : average,
+         attendance : student.attendance
+
+      }
+    
+   
+     })
+     let perfectAttendance = analyzed.filter(student => student.attendance === 100)
+     .map(student => student.name)
+     return{
+      analyzed:analyzed,
+      perfectAttendance:perfectAttendance
+     }
+       }
+       
+
+   
+   const  students = [
+  { name: "Alice", scores: [60, 70, 80], attendance: 100 },
+  { name: "Bob", scores: [40, 45, 50], attendance: 95 },
+  { name: "Clara", scores: [90, 85, 88], attendance: 100 }
+];
+console.log(analyzeStudents(students ))
+
+
+function gradeByScore(students){
+const gradeGroups = {
+topPerformers:[],
+averagePerformers:[],
+lowPerformer:[],
+}
+for(let student of students){
+   const avg = student.average;
+   const name = student.name;
+   if(avg >= 85){
+      gradeGroups.topPerformers.push(name)
+   } else if(avg >= 60  ){
+      gradeGroups.averagePerformers.push(name)
+   }else if (avg <= 59){
+      gradeGroups.lowPerformer.push(name)
+   }
+
+}
+
+let perfectAttenance = students.filter(student => student.attendance === 100 )
+.map(student => student.name)
+return {gradeGroups, 
+      perfectAttenance : perfectAttenance
+}
+
+}
+const testStudents = [
+  { name: "Alice", average: 92, attendance : 100 },
+  { name: "Bob", average: 77 , attendance :76},
+  { name: "Clara", average: 85 , attendance : 100 },
+  { name: "David", average: 68, attendance :85 },
+  { name: "Ella", average: 54, attendance :100 },
+  {name:'sonia', average :45, attendance :101}
+];
+console.log(gradeByScore(testStudents))
+
+function analyzeClassRoom(students){
+const analyzed = students.map( student => {
+   const total = student.scores.reduce((sum, score) => sum + score , 0);
+   const average = student.scores.length > 0 ? total / student.scores.length : 0;
+   const passed = average > 50
+ return {
+   ...student,
+   average, 
+   passed
+ }}
+ 
+
+)
+const topPerformers = analyzed.filter(s => s.average > 85).map(s => s.name);
+const averagePerformers = analyzed.filter(s => s.average >= 60 && s.average < 85).map(s => s.name);
+const lowPerformer = analyzed.filter(s => s.average < 50).map(s => s.name);
+const groupCount ={
+   top : topPerformers.length,
+   avg:averagePerformers.length,
+   low:lowPerformer.length
+}
+const perfectAttendance = analyzed.filter( s => s.average === 100).map(s => s.name);
+
+return{
+   topPerformers,
+   averagePerformers,
+   lowPerformer,
+   groupCount,
+   perfectAttendance
+}
+
+}
+console.log(analyzeClassRoom([
+  { name: "Alice", scores: [90, 85, 92], attendance: 100 },
+  { name: "Bob", scores: [60, 65, 62], attendance: 95 },
+  { name: "Clara", scores: [55, 50, 52], attendance: 100 },
+  { name: "David", scores: [80, 75, 78], attendance: 80 },
+  { name: "Ella", scores: [95, 93, 96], attendance: 100 }
+]))
+
+function analyzeSchoolData(school){
+const result = []
+for (let classObj of school){
+   const { className, students} = classObj;
+   let classTotal = 0;
+   let highestAverage = 0;
+   let topStudent = " ";
+for(let student of students){
+   const total = student.scores.reduce((sum,score) => sum + score, 0);
+   const average = total/student.scores.length;
+   classTotal += average 
+   if(average > highestAverage){
+      highestAverage = average;
+      topStudent = student.name;
+   }
+}
+const classAverage = classTotal/students.length 
+result.push({
+   className:className,
+   averageScore:parseFloat(classAverage.toFixed(2)),
+   topStudent:topStudent
+})
+}
+const overallTotal= result.reduce((sum, c) => sum + c.averageScore, 0);
+const overAllAverage = parseFloat((overallTotal/result.length).toFixed(2));
+
+return{
+  classes : result,
+   overallAverage:overAllAverage
+}
+
+}
+console.log(analyzeSchoolData([
+  {
+    className: "Math",
+    students: [
+      { name: "Alice", scores: [90, 95, 100] },
+      { name: "Bob", scores: [70, 80, 65] }
+    ]
+  },
+  {
+    className: "Science",
+    students: [
+      { name: "Clara", scores: [88, 92, 85] },
+      { name: "David", scores: [60, 75, 70] }
+    ]
+  }
+]));
+
+
+function rankStudents(students){
+const withAverage = students.map( student => {
+   const total = student.scores.reduce((sum, score ) => sum + score, 0);
+   const average = student.scores.length> 0 ? total / student.scores.length : 0;
+   return {
+      name : student.name,
+      average: Math.round(average * 100)/100
+   }
+})
+withAverage.sort((a,b) => b.average-a.average);
+let currentRank = 1;
+let previousAverage = null;
+let skip = 0;
+const ranked = withAverage.map((student, index) => {
+   if(student.average === previousAverage){
+      skip++
+   }else{
+      currentRank += index +1;
+      currentRank += skip ;
+      skip = 0;
+   }
+previousAverage = student.average;
+return{
+   name : student.name,
+   average:student.average,
+   rank: currentRank
+}
+})
+ return ranked
+ }
+const students = [
+  { name: "Alice", scores: [90, 95, 100] },
+  { name: "Bob", scores: [80, 85, 90] },
+  { name: "Clara", scores: [90, 95, 100] },
+  { name: "David", scores: [70, 75, 80] }
+];
+
+console.log(rankStudents(students));
+
+
+function checkStudents(students){
+   const checkM = students.map(student => {
+      const total = student.scores.reduce((sum,score) => sum + score, 0 );
+      const average = total / student.scores.length;
+      const excellence = student.attendance === 100 && average >= 60;
+      const improved = student.attendance === 100 || student.average > 60;
+      const perfectAttendance = student.attendance === 100;
+      return{
+      name: student.name,
+      perfectAttendance:perfectAttendance,
+      average:average,
+      improved:improved,
+      excellence:excellence
+   }
+   }
+  
+)
+return checkM
+}
+const students = [
+  { name: "Alice", scores: [70, 75, 80], attendance: 100 },
+  { name: "Bob", scores: [60, 55, 50], attendance: 90 },
+  { name: "Clara", scores: [80, 85, 90], attendance: 100 },
+  { name: "David", scores: [70, 70, 70], attendance: 100 }
+];
+
+console.log(checkStudents(students));
+
+function analyzeReviews(reviews) {
+const stopwords = ["the", "is", "a", "an", "and", "but", "with", "to", "of", "in", "on", "for", "at", "by", "it", "this", "that"];
+const total = reviews.reduce((sum, review) => sum + review, 0);
+const averageRating = Math.round(total/reviews.length * 100)/100;
+const allWords = reviews
+.map(review => review.reviewText.toLowerCase().replace(/[^a-z0-9\s]/g, " "))
+.join("")
+.split(/\s+/)
+.filter( word => word && !stopwords.includes(word))
+
+const wordFreq = { }
+for(let word of allWords){
+   wordFreq[word] = (wordFreq[word] || 0)+1
+}
+
+let mosCommonWord = "";
+let maxCount = 0;
+for(let word in wordFreq){
+   if ( wordFreq[word] > maxCount){
+      maxCount = wordFreq [word];
+      mosCommonWord = word; 
+   }
+}
+const topBooks = reviews
+.filter(review => review.rating > 4)
+.sort((a,b) => b.rating - a.rating)
+.map(review => ({title:review.title, rating: review.rating}))
+
+return{
+   averageRating,
+   mosCommonWord,
+   topBooks
+}
+}
+
+
+const reviews = [
+  {
+    title: "The Alchemist",
+    rating: 5,
+    reviewText: "A beautiful story with a powerful message."
+  },
+  {
+    title: "Atomic Habits",
+    rating: 4,
+    reviewText: "Very practical and inspiring. A must-read!"
+  },
+  {
+    title: "Ego is the Enemy",
+    rating: 3,
+    reviewText: "Good book but a bit repetitive."
+  },
+];
+console.log(analyzeReviews(reviews))
+
+function analyzeTransactions(transactions) {
+let totalCredit = 0;
+let totalDebit = 0
+let categoryTotal = {}
+let personDebit = {}
+
+for(let tx of  transactions){
+   const { name, type, amount, category} = tx;
+if (type === "credit"){
+   totalCredit += amount
+}else if( type === "debit"){
+   totalDebit += amount
+}
+if(!personDebit[name]){
+   personDebit[name] = 0
+}
+personDebit[name] += amount;
+if(!categoryTotal[category]){
+   categoryTotal[category] = 0;
+}
+categoryTotal[category] += amount;
+}
+
+let topSpender = "";
+let maxSpender = 0;
+for(let person in personDebit){
+   if(personDebit[person] > maxSpender){
+      maxSpender = personDebit[person];
+      topSpender = person;
+   }
+}
+
+
+
+ return {
+    totalCredit: totalCredit,
+    totalDebit: totalDebit,
+    categoryTotal: categoryTotal,
+    topSpender: topSpender
+  };
+}
+
+
+
+
+// Example input to test with
+const transactions = [
+  { name: "Alice", amount: 100, type: "debit", category: "groceries" },
+  { name: "Bob", amount: 300, type: "debit", category: "utilities" },
+  { name: "Alice", amount: 200, type: "credit", category: "salary" },
+  { name: "Clara", amount: 150, type: "debit", category: "groceries" },
+  { name: "Bob", amount: 200, type: "credit", category: "bonus" }
+];
+
+console.log(analyzeTransactions(transactions));
+*/
+function analyzeSubjects(data){
+const result = {}
+for(let cls of data) {
+   let totalMath = 0;
+   let totalEng = 0;
+   let name = "";
+   let studentCount = cls.students.length;
+
+   for(let student of cls.students){
+      totalMath += student.subjects.Math
+      totalEng += student.subjects.English
+      
+   }
+   result[cls.class] ={
+      averageMath : Math.round((totalMath/studentCount) *100)/100,
+      averageEng : Math.round((totalEng/studentCount)*100)/100,
+      name : cls.students.name
+   }
+}return result
+}
+const schoolData = [
+  {
+    class: "JSS1",
+    students: [
+      { name: "Alice", subjects: { Math: 75, English: 85 } },
+      { name: "Bob", subjects: { Math: 60, English: 70 } }
+    ]
+  },
+  {
+    class: "JSS2",
+    students: [
+      { name: "Clara", subjects: { Math: 90, English: 95 } },
+      { name: "David", subjects: { Math: 80, English: 78 } }
+    ]
+  }
+];
+
+console.log(analyzeSubjects(schoolData))
+function analyzeSubjects(data) {
+  const result = {};
+
+  for (let cls of data) {
+    let totalMath = 0;
+    let totalEng = 0;
+    let studentCount = cls.students.length;
+
+    // This will store per-student summaries
+    let studentSummaries = [];
+
+    for (let student of cls.students) {
+      const math = student.subjects.Math;
+      const english = student.subjects.English;
+      const average = Math.round(((math + english) / 2) * 100) / 100;
+
+      // Add to class totals
+      totalMath += math;
+      totalEng += english;
+
+      // Push individual student summary
+      studentSummaries.push({
+        name: student.name,
+        math: math,
+        english: english,
+        average: average
+      });
+    }
+
+    // Store overall class data in result
+    result[cls.class] = {
+      averageMath: Math.round((totalMath / studentCount) * 100) / 100,
+      averageEng: Math.round((totalEng / studentCount) * 100) / 100,
+      students: studentSummaries
+    };
+  }
+
+  return result;
+}
+
+</script>
+
+   
+            
+    </body>
+</html>
