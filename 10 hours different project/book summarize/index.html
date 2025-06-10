@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Summarizer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #6a11cb;
+      --secondary-color: #2575fc;
+      --success-color: #00c853;
+      --bg-color: #f4f7fb;
+      --text-color: #333;
+      --card-bg: #ffffffcc;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    .logo img {
+      width: 48px;
+      height: 48px;
+    }
+
+    .logo h1 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin: 0;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 160px;
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: var(--radius);
+      resize: vertical;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    button {
+      flex: 1 1 150px;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    #summarizeBtn {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    #summarizeBtn:hover {
+      background-color: #511f9f;
+    }
+
+    #speakBtn {
+      background-color: var(--success-color);
+      color: white;
+    }
+
+    #speakBtn:hover {
+      background-color: #00a34f;
+    }
+
+    #summaryText {
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: var(--radius);
+      font-size: 1rem;
+      white-space: pre-wrap;
+      min-height: 100px;
+      border: 1px solid #ddd;
+    }
+
+    @media (max-width: 600px) {
+      .logo h1 {
+        font-size: 1.5rem;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="Book Icon">
+      <h1>Book Summarizer</h1>
+    </div>
+
+    <textarea id="bookText" placeholder="Paste or write your book excerpt here..."></textarea>
+
+    <div class="buttons">
+      <button id="summarizeBtn">🧠 Summarize</button>
+      <button id="speakBtn">🔊 Speak Summary</button>
+    </div>
+
+    <div id="summaryText">Your summary will appear here...</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

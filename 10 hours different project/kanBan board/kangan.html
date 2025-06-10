@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanBan Board</title>
+    <link rel="stylesheet" href="kanban.css">
+</head>
+<body>
+    <div class="container"> 
+        <h1> Simple KanBan Board</h1>
+
+        <div class="board">
+            <div class="lists" id="todo">
+              <h2>To Do</h2>
+              <div class="card" draggable="true" id="task1">Wash dishes</div>
+              <div class="card" draggable="true" id="task2">Buy groceries</div>
+            </div>
+          
+            <div class="lists" id="in-progress">
+              <h2>In Progress</h2>
+            </div>
+          
+            <div class="lists" id="done">
+              <h2>Done</h2>
+            </div>
+          </div>
+          
+    </div>
+
+<script src="kanban.js"></script>
+</body>
+</html>
